@@ -1,0 +1,12 @@
+python train.py --dataroot ./datasets/demo \
+                --name orchard_mapping_cyclegan \
+                --model cycle_gan \
+                --netG resnet_9blocks \
+                --n_epochs 50 \
+                --n_epochs_decay 50 \
+                --batch_size 16 \
+                --lr 0.0002 \
+                --lambda_A 10.0 \
+                --lambda_B 10.0 \
+                --lambda_identity 0.5 \
+                --display_id 1
